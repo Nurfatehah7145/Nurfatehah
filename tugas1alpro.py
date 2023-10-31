@@ -62,3 +62,32 @@ print(
     2.Regular : 57_273
     3.Large : 89_728
 """)
+harga_ukuran = 0
+ukuran_pizza =int(input("pilih ukuran pizza"). lower())
+if ukuran_pizza == 1:
+    harga_ukuran = 0
+elif ukuran_pizza == 2:
+    harga_ukuran =57_273
+elif ukuran_pizza == 3:
+    harga_ukuran = 89_728
+
+#Tambahan cheese
+harga_keju = 0
+print("harga keju : 13_636")
+tambahan_keju = input("tambahan keju (y/n): ")
+if tambahan_keju == "y":
+    harga_keju = 13_636
+    tambahan_keju = True
+elif tambahan_keju  == "n":
+    tambahan_keju = False
+
+#total harga
+total_harga = (harga_pizza + harga_crust + harga_ukuran + harga_keju)
+print("total yang harus dibayar adalah Rp" + str(total_harga))
+
+print("Terima Kasih telah membeli Pizza di Pizza Hut")
+print(f"Pesanan Anda Pizza dengan Topping {topping_pizza}")
+print(f"Crust/Pinggiran {crust_pizza} dan")
+print(f"ukuran pizza {ukuran_pizza}")
+print(f"{'dengan' if tambahan_keju else 'tanpa'} Tambahan Keju")
+print(f"Total Harga: Rp {total_harga}")
