@@ -33,3 +33,34 @@ elif topping_pizza == 4:
 print(
 """
     1.Pan : free
+    2.StuffedCrust Cheese : 11_818
+    3.StuffedCrust sausage : 9_091
+    4.Cheesy Bites : 13_636
+    5.Crown Crust : 11_818
+""")
+
+harga_crust = 0
+crust_pizza = int(input("pilih crust"). lower())
+if crust_pizza == 1:
+    crust_pizza = "pan"
+    harga_crust = 0
+elif crust_pizza == 2:
+    crust_pizza = "StuffedCrust Cheese"
+    harga_crust= 11_818
+elif crust_pizza == 3:
+    crust_pizza = "StuffedCrust Sausage"
+    harga_crust = 9_091
+elif crust_pizza == 4:
+    crust_pizza = "Cheesy Bites"
+    harga_crust = 13_636
+elif crust_pizza == 5:
+    crust_pizza = "Crown Crust"
+    harga_crust = 11_818
+
+#Ukuran pizza
+print(
+"""
+    1.Personal : free
+    2.Regular : 57_273
+    3.Large : 89_728
+""")
