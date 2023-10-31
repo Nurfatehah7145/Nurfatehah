@@ -5,7 +5,6 @@
 """
 
 #Daftar Menu
-
 print(
 """ter BBQ : 43_637
     2. Meat Mo
@@ -13,7 +12,6 @@ print(
     3. Super Supreme : 43_637
     4. Super Supreme Chicken : 43_637
 """)
-
 harga_pizza = 0
 topping_pizza = int(input("pilih topping pizza: ").lower())
 if topping_pizza == 1:
